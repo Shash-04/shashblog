@@ -22,7 +22,7 @@ function Login() {
                     getCurrentUser()
                 if (userData) {
                     dispatch(authLogin({ userData }))
-                    navigate('/')
+                    navigate('/all-posts')
                 }
             } else {
 
