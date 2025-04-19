@@ -16,7 +16,6 @@ function AllPosts() {
                 console.error("Error fetching posts:", error);
             }
         };
-
         fetchPosts();
     }, []); // ✅ Runs only once when component mounts
 

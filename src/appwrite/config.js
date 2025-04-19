@@ -168,7 +168,7 @@ export class Service {
             console.error("getFilePreview Error: Missing fileId");
             return null; // Or return a default image URL
         }
-        return this.bucket.getFilePreview(conf.appwriteBucketId, fileId);
+        return this.bucket.getFileView(conf.appwriteBucketId, fileId);
     }
     
 }
