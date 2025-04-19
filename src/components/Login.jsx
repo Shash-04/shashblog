@@ -22,7 +22,7 @@ function Login() {
                     getCurrentUser()
                 if (userData) {
                     dispatch(authLogin({ userData }))
-                    navigate('/')
+                    navigate('/all-posts')
                 }
             } else {
 
@@ -73,10 +73,12 @@ function Login() {
                                 required: true,
                             })}
                         />
+                        
                         <Button
                             type="submit"
                             className= "x-6 text-center py-3 bg-blue-500 text-white font-semibold rounded-lg text-2xl w-5/6 shadow-md hover:bg-blue-600 focus:outline-none hover:scale-105 transition-all"
                         >Sign in</Button>
+                        
                     </div>
                 </form>
             </div>

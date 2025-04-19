@@ -22,7 +22,7 @@ function Signup() {
                 const userData = await authService.getCurrentUser()
                 if (userData) {
                     dispatch(login({ userData }))
-                    navigate('/')
+                    navigate('/all-posts')
                 }
             }
         } catch (error) {
@@ -81,10 +81,13 @@ function Signup() {
                                 required: true,
                             })}
                         />
-                        <Button type="submit" className="x-6 py-3 bg-blue-500 text-white font-semibold rounded-lg text-2xl w-5/6 shadow-md hover:bg-blue-600 focus:outline-none hover:scale-105 transition-all"
-                        >
+                       
+                        <Button 
+                        type="submit" 
+                        className="x-6 py-3 bg-blue-500 text-white font-semibold rounded-lg text-2xl w-5/6 shadow-md hover:bg-blue-600 focus:outline-none hover:scale-105 transition-all">
                             Create Account
                         </Button>
+                        
                     </div>
                 </form>
             </div>
